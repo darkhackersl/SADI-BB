@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 });
 
 // Serve the API endpoints
-app.use('/api', require('./api/blackbox'));
+app.use('/', require('main.js'));
 
 // Catch-all route to handle unknown routes
 app.get('*', (req, res) => {
